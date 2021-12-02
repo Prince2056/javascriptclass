@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nested loop</title>
+</head>
+<body>
+    <p>nested loop -> loop inside loop</p>
+
+    <script>
+        for(i=1;i<=5;i++){
+            for(j=1;j<=5;j++){
+                document.write(`*`)
+            }
+            document.write(`<br>`)
+        }
+        for(a=1;a<=5;a++){
+            for(b=1;b<=a;b++){
+                document.write(`*`)
+            }
+            document.write(`<br>`)
+        }
+
+        for(a=1;a<=5;a++){
+            for(b=5;b>=a;b--){
+                document.write(`*`)
+            }
+            document.write(`<br>`)
+        }
+        //pyramid
+
+        for(a=1;a<=5;a++){
+            for(b=5;b>=a;b--){
+                document.write(`&nbsp`)
+            }
+            for(c=1;c<=a;c++){
+                document.write(`*&nbsp;`)
+            }
+            document.write(`<br>`)
+        }
+        document.write(`<br>`)
+
+        for(a=1;a<=5;a++){
+            for(b=1;b<=a;b++){
+                document.write(`&nbsp`)
+            }
+            for(c=5;c>=a;c--){
+                document.write(`*&nbsp;`)
+            }
+            document.write(`<br>`)
+        }
+
+    </script>
+    
+</body>
+</html>

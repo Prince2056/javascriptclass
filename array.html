@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array</title>
+</head>
+<body>
+    <p>arrat->collection of homogenous object ie a variable contain more than one value</p>
+    <script>
+        const Name=['Manish','Kanchha','Deepak','Ganeshmaya','Maichori']
+        document.write(`${Name} <br>`)
+        document.write(`${Name[0]} <br>`)
+        //to find the array length 
+        document.write(`${Name.length}`)
+        //to remove last array element use poop
+        Name.pop()
+        document.write(`${Name} <br>`)
+        //to add last array element use push
+        Name.push('Maheshwori')
+        document.write(`${Name} <br>`)
+        //shift-> remove first array element
+        
+        Name.shift()
+        document.write(`${Name} <br>`)
+        //unshift-> add first array element
+        Name.unshift('Mahesh')
+        document.write(`${Name} <br>`)
+
+        // //to use spice method to add more tha one array element at any position
+        // Namw.splice(2,0,'Kanchha','Deepak')
+        // //here 2 is a position where new elements are added from
+        // //0 means no any array element is remove
+        // document.write(`${Name} <br>`)
+
+        // Name.splice(2,1,'Prince')
+        // document.write(`${Name} <br>`)
+
+        //reverse
+        Name.reverse()
+        document.write(`${Name} <br>`)
+
+
+       
+    </script>
+    
+</body>
+</html>
